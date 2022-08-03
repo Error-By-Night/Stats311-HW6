@@ -1,0 +1,66 @@
+---
+title: "Stat311 Homework 6 Template"
+author: "Put Your Name Here"
+date: "`r Sys.Date()`"
+output: openintro::lab_report
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(BSDA)
+```
+### Read in the ice cream, birthweight, and cholesterol data sets.
+```{r, eval=TRUE}
+IC.df <- read.csv("IceCream.csv", header=TRUE, as.is=TRUE)
+IC.df$Sex <- as.factor(IC.df$Sex)
+IC.df$Flavor <- as.factor(IC.df$Flavor)
+#
+BW.df <- read.csv("BirthWeight.csv", header=TRUE, as.is=TRUE)
+BW.df$Smoker <- as.factor(BW.df$Smoker)
+BW.df$BirthWt <- as.factor(BW.df$BirthWt)
+#
+C.df <- read.csv("Cholesterol.csv", header=TRUE, as.is=TRUE)
+C.df$Cereal <- as.factor(C.df$Cereal)
+```
+
+### Problem 1
+```{r CI video}
+
+```
+
+### Problem 2
+```{r create subsets and CI}
+
+```
+
+### Problem 3
+```{r get Variances}
+
+```
+
+### Problem 4
+```{r CI for Prop Smokers}
+
+```
+
+
+### Problem 5
+```{r twoprop CI}
+
+```
+
+### Problem 6
+
+
+### Problem 7
+```{r cholesteral CI}
+
+```
+
+### Problem 8
+```{r tsum.test}
+
+```
+
+...
